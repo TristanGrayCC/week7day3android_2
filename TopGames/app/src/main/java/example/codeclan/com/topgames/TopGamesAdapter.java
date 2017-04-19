@@ -33,8 +33,17 @@ public class TopGamesAdapter extends ArrayAdapter<Game> {
         TextView title = (TextView) listItemView.findViewById(R.id.title);
         title.setText(currentGame.getTitle().toString());
 
-        TextView year = (TextView) listItemView.findViewById(R.id.year);
-        year.setText(currentGame.getYear().toString());
+        TextView score = (TextView) listItemView.findViewById(R.id.score);
+        String textScore = "metacritic score: "+ currentGame.getScore().toString();
+        score.setText(textScore);
+
+        TextView genre = (TextView) listItemView.findViewById(R.id.genre);
+        String textGenre = "Genre: "+currentGame.getGenre().toString();
+        genre.setText(textGenre);
+
+        TextView publisher = (TextView) listItemView.findViewById(R.id.publisher);
+        String textPublisher = "Publisher: "+currentGame.getPublisher().toString();
+        publisher.setText(textPublisher);
 
         listItemView.setTag(currentGame);
 

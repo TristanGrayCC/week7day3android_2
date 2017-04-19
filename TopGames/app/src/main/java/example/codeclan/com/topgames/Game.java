@@ -8,14 +8,16 @@ public class Game {
     private int metacriticScore;
     private String genre;
     private String console;
+    private String publisher;
 
-    public Game(Integer ranking, String title, Integer year, Integer metacriticScore, String genre, String console) {
+    public Game(Integer ranking, String title, Integer year, Integer metacriticScore, String genre, String console, String publisher) {
         this.ranking = ranking;
         this.title = title;
         this.year = year;
         this.metacriticScore = metacriticScore;
         this.genre = genre;
         this.console = console;
+        this.publisher = publisher;
     }
 
     public Integer getRanking() {
@@ -42,4 +44,7 @@ public class Game {
         return console;
     }
 
+    public String getPublisher() {
+        return publisher;
+    }
 }
