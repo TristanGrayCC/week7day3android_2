@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TopGames</string>
+    <string name="title_activity_top_games">TopGamesActivity</string>
+</resources>
